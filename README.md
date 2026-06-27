@@ -1,9 +1,9 @@
-# EtherosAuth - Height
+# EtherosAuth - Component
 
 ---
 ## 需求速览：
-* 适用版本：```Minecraft 1.17 – 1.20.4```
-* 前置插件：```EtherosCore-Height``` [Github](https://github.com/EtherosGroup/EtherosCore-Height)
+* 适用版本：```Minecraft 1.20.5 – 26.2```
+* 前置插件：```EtherosCore-height``` [Github](https://github.com/EtherosGroup/EtherosCore-Hieght)
 
 ## 认证功能：
 ### 本地（Local）
@@ -35,20 +35,7 @@
 正在开发ing
 
 ## 预览：
-> 概览
-> ![overview.png](docs/readme-paper/overview.png)
-
-> 控制台
-> ![console.png](docs/readme-paper/console.png)
-
-> 登入
-> ![login.png](docs/readme-paper/login.png)
-
-> 信息
-> ![info.png](docs/readme-paper/info.png)
-
-> 重复登入
-> ![logged in.png](docs/readme-paper/logged%20in.png)
+> 请参考 [EtherosAuth - Height](https://github.com/EtherosGroup/EtherosAuth-Height)
 
 ## 配置文件：
 
