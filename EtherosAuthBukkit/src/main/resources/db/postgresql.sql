@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS player_account(
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    uuid UUID NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS player_location (
+    uuid UUID NOT NULL PRIMARY KEY,
+    world VARCHAR(255) NOT NULL,
+    x DOUBLE PRECISION NOT NULL,
+    y DOUBLE PRECISION NOT NULL,
+    z DOUBLE PRECISION NOT NULL,
+    yaw REAL NOT NULL,
+    pitch REAL NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_world ON player_location (world);

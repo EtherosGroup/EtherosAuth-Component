@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS player_account(
+    id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    uuid UUID NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS player_location (
+    uuid UUID NOT NULL PRIMARY KEY,
+    world VARCHAR(255) NOT NULL,
+    x DOUBLE NOT NULL,
+    y DOUBLE NOT NULL,
+    z DOUBLE NOT NULL,
+    yaw FLOAT NOT NULL,
+    pitch FLOAT NOT NULL,
+
+    INDEX idx_world (world)
+)
